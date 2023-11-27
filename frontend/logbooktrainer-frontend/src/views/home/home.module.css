@@ -1,0 +1,148 @@
+.cardList {
+    border-radius: 20px;
+    width: 400px;
+    height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: var(--degrade, linear-gradient(166deg, #1F1D1F 0.13%, #2A3039 100.6%));
+}
+
+.cardListLarge {
+    border-radius: 20px;
+    width: 400px;
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: var(--degrade, linear-gradient(166deg, #1F1D1F 0.13%, #2A3039 100.6%));
+}
+
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largura da barra de rolagem */
+}
+
+/* Estiliza o polegar da barra de rolagem (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    /* Cor do polegar da barra de rolagem */
+    border-radius: 6px;
+    /* Borda arredondada do polegar */
+}
+
+/* Estiliza o fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+    /* Cor do fundo da barra de rolagem */
+}
+
+/* Estiliza a barra de rolagem no eixo horizontal */
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+    /* Altura da barra de rolagem horizontal */
+}
+
+/* Estiliza o polegar da barra de rolagem no eixo horizontal */
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #333;
+    /* Cor do polegar da barra de rolagem horizontal */
+}
+
+/* Estiliza o fundo da barra de rolagem no eixo horizontal */
+::-webkit-scrollbar-track:horizontal {
+    background-color: #1a1a1a;
+    /* Cor do fundo da barra de rolagem horizontal */
+}
+
+/* Define a largura da barra de rolagem em navegadores que não suportam o Webkit */
+/* Isso afetará navegadores como o Firefox */
+scrollbar-width: thin;
+/* "thin" para uma barra de rolagem fina, "auto" para a barra padrão */
+
+/* Define as cores da barra de rolagem em navegadores que não suportam o Webkit */
+/* Isso afetará navegadores como o Firefox */
+/* scrollbar-color: #333 #f0f0f0; */
+
+td,
+th {
+    padding-top: 25px;
+    vertical-align: bottom;
+}
+
+
+hr {
+    border: 1px solid #A2A3A4;
+    /* Largura e estilo da linha */
+    background-color: #A2A3A4;
+    /* Cor da linha */
+    opacity: 0.3;
+}
+
+table {
+    width: 100%;
+}
+
+.addBtn {
+    position: relative;
+    background-color: #161819;
+    color: #fff;
+    width: 220px;
+    height: 60px;
+    border: 2px solid transparent;
+    font-weight: 800;
+    /* Defina uma borda transparente inicialmente */
+    transition: border-color 0.3s;
+    cursor: pointer;
+    /* Adicione uma transição suave para a cor da borda */
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin: 3em;
+    position: relative;
+}
+
+.cancelBtn {
+    background: transparent;
+    border: none;
+    color: #A2A3A4;
+    display: flex;
+    position: absolute;
+    right: 18px;
+    font: .7rem;
+    cursor: pointer;
+}
+
+.saveBtn {
+    background: #CBA46A;
+    width: 90%;
+    height: 60px;
+    border-radius: 6px;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    display: flex;
+    font: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.saveBtn:hover {
+    border: solid 1px white;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+button.errorMessage {
+    color: white;
+    background-color: red;
+}
