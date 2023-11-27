@@ -1,0 +1,113 @@
+.dateTime {
+    font-size: .7em;
+    position: relative;
+    color: #A2A3A4;
+}
+
+.multipleColum {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+
+.alignBottom {
+    vertical-align: bottom;
+}
+
+.removerButton {
+    background: transparent;
+    outline: none;
+    border: none;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.elipses {
+    white-space: nowrap;
+    /* Evita que o texto quebre em várias linhas */
+    overflow: hidden;
+    /* Esconde o texto que ultrapassa a largura do contêiner */
+    text-overflow: ellipsis;
+    /* Adiciona "..." quando o texto é cortado */
+    width: 50px;
+    max-width: 50px;
+}
+
+
+.header,
+.header>th,
+.header>th>td {
+    padding-top: 0px !important;
+}
+
+select,
+input {
+    width: 90%;
+    height: 60px;
+    background-color: #24272C;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 12px;
+    font-size: .9rem;
+    outline: none;
+}
+
+select::-moz-focus-visible,
+select:focus-visible {
+    border: none;
+    outline: none;
+}
+
+select:hover,
+input:hover,
+textarea:hover {
+    border: 1px solid #e7e7e7;
+    cursor: pointer;
+}
+
+
+label {
+    font-size: .7rem;
+    margin: 0 0 0 14px;
+    color: #A2A3A4;
+
+}
+
+textarea {
+    width: 100%;
+    max-width: 90%;
+    min-width: 83%;
+    height: 130px;
+    background-color: #24272C;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 15px;
+    font-size: .9rem;
+    outline: none;
+}
+
+tr:hover {
+    background-color: #aabbcc;
+    /* Substitua pela cor desejada */
+}
+
+tr:hover td {
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave */
+}
+
+tr.noHover:hover {
+    background-color: transparent;
+    /* Substitua pela cor desejada */
+}
+
+table {
+    border-spacing: 0px;
+}

@@ -1,0 +1,39 @@
+.cardListLargeLogin {
+    border-radius: 20px;
+    width: 400px;
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: var(--degrade, linear-gradient(166deg, #1F1D1F 0.13%, #2A3039 100.6%));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginBtn {
+    background: #CBA46A;
+    width: 90%;
+    height: 60px;
+    border-radius: 6px;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    display: flex;
+    font: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.forgotPassword {
+    margin: 70px auto;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #CBA46A;
+}
