@@ -177,12 +177,56 @@ Liste todas as dependencias e libs que o usuário deve ter instalado na máquina
 No terminal, clone o projeto:
 
 ```
-git clone https://github.com/felipeverissimo/logbooktrainer.git
+ ### Configurando o Projeto Logbook Trainer
+
+ 1. **Clone o repositório:**
+    bash
+    git clone https://github.com/felipeverissimo/logbooktrainer.git
+
+
+ 2. **Acesse a pasta do backend:**
+    bash
+    cd logbook-trainer/backend/logbook-trainer-backend
+
+
+ 3. **Instale as dependências do backend:**
+    bash
+    npm install
+
+
+ 4. **Volte à raiz do projeto:**
+    bash
+    cd ../..
+
+
+ 5. **Acesse a pasta do frontend:**
+    bash
+    cd frontend/logbook-trainer-frontend
+
+
+ 6. **Instale as dependências do frontend:**
+    bash
+    npm install
+
+
+ 7. **Configurando o Banco de Dados:**
+    - Altere o path do banco de dados conforme a disponibilidade da sua máquina. Procure e ajuste as configurações no código, se necessário.
+
+ 8. **Inicie o backend:**
+    bash
+    cd ../backend/logbook-trainer-backend
+    npm start
+
+
+ 9. **Inicie o frontend:**
+    bash
+    cd ../../frontend/logbook-trainer-frontend
+    npm start
+
+
+ Agora, o projeto Logbook Trainer deve estar configurado e em execução localmente em seu ambiente de desenvolvimento. Certifique-se de verificar o console para quaisquer mensagens ou erros durante a inicialização.
+
 ```
-
-...
-
-Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
 
 ## Como rodar os testes
 
@@ -205,6 +249,80 @@ cd logbooktrainer-backend
 npm test
 
 ```
+
+### Lista para testes frontend
+
+1. **Renderiza o componente ExerciseForm**
+
+   - Descrição: Verifica se o componente `ExerciseForm` é renderizado corretamente.
+   - Arquivo: `ExerciseForm.test.js` .
+   - Comando: `npm test ExerciseForm.test.js` .
+
+2. **Manusear a mudança de campos**
+
+   - Descrição: Testa se o componente lida corretamente com a mudança nos campos.
+   - Arquivo: `ExerciseForm.test.js` .
+   - Comando: `npm test ExerciseForm.test.js` .
+
+3. **Teste de clique no botão salvar**
+
+   - Descrição: Simula o clique no botão "Salvar" e verifica se o comportamento esperado ocorre.
+   - Arquivo: `ExerciseForm.test.js` r.
+   - Comando: `npm test ExerciseForm.test.js` .
+
+4. **Teste de clique no botão adicionar**
+
+   - Descrição: Simula o clique no botão "Adicionar" e verifica se o comportamento esperado ocorre.
+   - Arquivo: `ExerciseForm.test.js` .
+   - Comando: `npm test ExerciseForm.test.js` .
+
+5. **Renderiza o App com o Provider e testa navegação**
+
+   - Descrição: Garante que o aplicativo seja renderizado corretamente com o provedor de contexto e testa a navegação.
+   - Arquivo: `App.test.js` .
+   - Comando: `npm test App.test.js` .
+
+6. **Teste de clique no botão login**
+
+   - Descrição: Simula o clique no botão "Login" e verifica se o comportamento esperado ocorre.
+   - Arquivo: `LoginButton.test.js` .
+   - Comando: `npm test LoginButton.test.js` .
+
+7. **Renderiza o App com o Provider e testa navegação**
+   - Descrição: Garante que o aplicativo seja renderizado corretamente com o provedor de contexto e testa a navegação.
+   - Arquivo: `App.test.js` .
+   - Comando: `npm test App.test.js` .
+
+### Lista para testes backend
+
+1. **Deve criar um usuário com sucesso**
+
+   - Descrição: Testa se a criação de um usuário é bem-sucedida.
+   - Arquivo: `createUser.test.js`.
+   - Comando: `npm test createUser.test.js`.
+
+2. **Testando loginUser**
+
+   - Descrição: Testa o login de usuário, verificando se o processo de login funciona corretamente.
+   - Arquivo: `loginUser.test.js` .
+   - Comando: `npm test loginUser.test.js` .
+
+3. **Deve retornar erro ao fornecer credenciais inválidas**
+
+   - Descrição: Testa se o sistema retorna um erro ao fornecer credenciais de usuário inválidas durante o login.
+   - Arquivo: `loginUser.test.js` .
+   - Comando: `npm test loginUser.test.js` .
+
+4. **Deve criar um exercício com sucesso**
+
+   - Descrição: Testa se a criação de um exercício é bem-sucedida.
+   - Arquivo: `createExercice.test.js`.
+   - Comando: `npm test createExercice.test.js`.
+
+5. **Deve retornar erro ao falhar ao criar um exercício**
+   - Descrição: Testa se o sistema retorna um erro ao falhar na criação de um exercício.
+   - Arquivo: `createExercice.test.js`.
+   - Comando: `npm test createExercice.test.js`.
 
 ## Casos de Uso
 

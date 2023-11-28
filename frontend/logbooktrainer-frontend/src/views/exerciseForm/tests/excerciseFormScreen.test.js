@@ -11,7 +11,7 @@ import ExercisesForm from "../index";
 describe("ExercisesForm", () => {
   const store = createStore(rootReducer);
 
-  test("renders the ExercisesForm component", () => {
+  test("renderiza o componente ExerciseForm", () => {
     render(
       <Provider store={store}>
         <MemoryRouter>
@@ -28,7 +28,7 @@ describe("ExercisesForm", () => {
     expect(screen.getByText("Salvar")).toBeInTheDocument();
   });
 
-  test("handles changes in form fields", async () => {
+  test("Manusear a mudança de campos", async () => {
     render(
       <Provider store={store}>
         <MemoryRouter>
@@ -40,7 +40,6 @@ describe("ExercisesForm", () => {
     const typeExercice = screen.getByLabelText("Tipo do exercício");
     const repetition = screen.getByLabelText("Repetição");
 
-    // Simulate user input
     fireEvent.change(typeExercice, {
       target: { value: "Supino Reto" },
     });
@@ -48,8 +47,6 @@ describe("ExercisesForm", () => {
       target: { value: "10" },
     });
 
-    // console.log(weight);
-    // Verify that the form fields have been updated
     expect(typeExercice.value).toBe("Supino Reto");
     expect(repetition.value).toBe("10");
   });
