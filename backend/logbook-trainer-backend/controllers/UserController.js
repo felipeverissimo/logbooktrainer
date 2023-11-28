@@ -1,6 +1,4 @@
-
-
-const UserModel = require('../schema/UserModel'); 
+const UserModel = require("../schema/UserModel");
 
 // Função para criar um exercício
 exports.createUser = async (req, res) => {
@@ -8,10 +6,12 @@ exports.createUser = async (req, res) => {
     const { nome, password, email } = req.body;
     const newUser = new UserModel({ nome, password, email });
     await newUser.save();
-     res.status(200).json({ message: 'Usuário criado com sucesso!', User: newUser });
+    res
+      .status(200)
+      .json({ message: "Usuário criado com sucesso!", User: newUser });
   } catch (error) {
-    console.error('Erro ao criar um usuário:', error);
-    res.status(500).json({ error: 'Erro ao criar um usuário' });
+    console.error("Erro ao criar um usuário:", error);
+    res.status(500).json({ error: "Erro ao criar um usuário" });
   }
 };
 
@@ -23,21 +23,26 @@ exports.loginUser = async (req, res) => {
 
     const userToLog = await UserModel.findOne({ nome: loginUser.nome }).exec();
 
-    console.log(req)
+    console.log(req);
 
-    console.log(userToLog)
-    console.log(loginUser)
-    if(userToLog.nome === loginUser.nome && userToLog.password === loginUser.password){
-      res.status(200).json({ message: 'Usuário logado com sucesso!', usuario: userToLog });
+    console.log(userToLog);
+    console.log(loginUser);
+    if (
+      userToLog.nome === loginUser.nome &&
+      userToLog.password === loginUser.password
+    ) {
+      res
+        .status(200)
+        .json({ message: "Usuário logado com sucesso!", usuario: userToLog });
     }
   } catch (error) {
-    console.error('Erro ao criar um usuário:', error);
-    res.status(500).json({ error: 'Erro ao criar um usuário' });
+    console.error("Erro ao criar um usuário:", error);
+    res.status(500).json({ error: "Erro ao logar um usuário" });
   }
 };
 
 // Função para atualizar um exercício
-exports.updateUser  = async (req, res) => {
+exports.updateUser = async (req, res) => {
   try {
     // const id = req.params.id;
     // const { data, tipoExercicio, peso, repeticao, notas } = req.body;
@@ -54,10 +59,15 @@ exports.updateUser  = async (req, res) => {
     // exerciceToUpdate.notas = notas;
 
     // await exerciceToUpdate.save();
-    res.status(200).json({ message: 'Usuário atualizado com sucesso!', exercice: exerciceToUpdate });
+    res
+      .status(200)
+      .json({
+        message: "Usuário atualizado com sucesso!",
+        exercice: exerciceToUpdate,
+      });
   } catch (error) {
-    console.error('Erro ao atualizar usuário:', error);
-    res.status(500).json({ error: 'Erro ao atualizar usuário' });
+    console.error("Erro ao atualizar usuário:", error);
+    res.status(500).json({ error: "Erro ao atualizar usuário" });
   }
 };
 
@@ -68,13 +78,13 @@ exports.getExerciceByUser = async (req, res) => {
     // const exercice = await ExercicesModel.findById(id);
 
     if (!exercice) {
-      return res.status(404).json({ error: 'Usuário não encontrado' });
+      return res.status(404).json({ error: "Usuário não encontrado" });
     }
 
     res.status(200).json(exercice);
   } catch (error) {
-    console.error('Erro ao buscar usuário por ID:', error);
-    res.status(500).json({ error: 'Erro ao buscar usuário por ID' });
+    console.error("Erro ao buscar usuário por ID:", error);
+    res.status(500).json({ error: "Erro ao buscar usuário por ID" });
   }
 };
 
@@ -84,8 +94,8 @@ exports.getAllUsers = async (req, res) => {
     const exercices = await ExercicesModel.find({});
     res.status(200).json(exercices);
   } catch (error) {
-    console.error('Erro ao buscar todos os usuários:', error);
-    res.status(500).json({ error: 'Erro ao buscar todos os usuários' });
+    console.error("Erro ao buscar todos os usuários:", error);
+    res.status(500).json({ error: "Erro ao buscar todos os usuários" });
   }
 };
 
@@ -96,12 +106,14 @@ exports.deleteUser = async (req, res) => {
     const resultado = await ExercicesModel.findByIdAndDelete(_id);
 
     if (!resultado) {
-      return res.status(404).json({ message: 'Usuário não encontrado' });
+      return res.status(404).json({ message: "Usuário não encontrado" });
     }
 
-    res.status(200).json({ message: 'usuário excluído com sucesso!', resultado });
+    res
+      .status(200)
+      .json({ message: "usuário excluído com sucesso!", resultado });
   } catch (error) {
-    console.error('Erro ao excluir usuário:', error);
-    res.status(500).json({ error: 'Erro ao excluir usuário' });
+    console.error("Erro ao excluir usuário:", error);
+    res.status(500).json({ error: "Erro ao excluir usuário" });
   }
 };

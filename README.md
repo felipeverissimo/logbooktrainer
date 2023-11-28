@@ -3,10 +3,10 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20EXPRESS&color=RED&style=for-the-badge&logo=EXPRESS"/>
+   <img src="http://img.shields.io/static/v1?label=express&message=EXPRESS&color=RED&style=for-the-badge&logo=EXPRESS"/>
 </p>
 
-> Status do Projeto: :warning: (em desenvolvimento, etc)
+> Status do Projeto: :warning: (em desenvolvimento)
 
 ### Tópicos
 
@@ -177,7 +177,7 @@ Liste todas as dependencias e libs que o usuário deve ter instalado na máquina
 No terminal, clone o projeto:
 
 ```
-git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
+git clone https://github.com/felipeverissimo/logbooktrainer.git
 ```
 
 ...
@@ -186,10 +186,24 @@ Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio 
 
 ## Como rodar os testes
 
-Coloque um passo a passo para executar os testes
+Para realizar os testes, é necessário que você escolha o módulo que deseja testar, acessando as respectivas pastas.
 
 ```
-$ npm test, rspec, etc
+
+cd frontend
+
+cd logbooktrainer-frontend
+
+npm test
+
+ou
+
+cd backend
+
+cd logbooktrainer-backend
+
+npm test
+
 ```
 
 ## Casos de Uso

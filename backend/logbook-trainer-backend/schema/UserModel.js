@@ -1,12 +1,20 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-    nome: String,
-    password: String,
-    email: String,
+  nome: String,
+  password: String,
+  email: String,
 });
 
-const userModel = mongoose.model('user', userSchema);
+userSchema.methods.save = async function () {
+  return Promise.resolve(this);
+};
+
+userSchema.methods.findOneAsync = async function (conditions) {
+  const user = await this.findOne(conditions);
+  return user ? user.toObject() : null;
+};
+
+const userModel = mongoose.model("user", userSchema);
 
 module.exports = userModel;
-
