@@ -160,9 +160,9 @@ A funcionalidade de **Cálculo de 1RM** no Loogbook Trainer oferece uma abordage
 
 > Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
 
-...
+Com um layout simplificado e focado na experiência web/mobile, apresento abaixo uma versão preliminar do design do projeto.
 
-Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
+<img src="https://drive.google.com/uc?export=view&id=1plmIIVvrBqcFjMqTwY-WLPJDldQkM9Le" width=100%>
 
 ## Pré-requisitos
 
