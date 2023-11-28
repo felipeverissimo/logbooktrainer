@@ -1,18 +1,13 @@
-<h1>LogBook Trainer</h1> 
+<h1>LogBook Trainer</h1>
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
-  <!-- <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
-  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=Ruby&message=2.6.3&color=red&style=for-the-badge&logo=ruby"/>
-  <img src="http://img.shields.io/static/v1?label=Ruby%20On%20Rails%20&message=6.0.2.2&color=red&style=for-the-badge&logo=ruby"/>
-  <img src="http://img.shields.io/static/v1?label=TESTES&message=%3E100&color=GREEN&style=for-the-badge"/> -->
    <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
 
-> Status do Projeto: :heavy_check_mark: :warning: (em desenvolvimento, etc)
+> Status do Projeto: :warning: (em desenvolvimento, etc)
 
-### Tópicos 
+### Tópicos
 
 :small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
@@ -24,10 +19,9 @@
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-... 
+...
 
-
-## Descrição do projeto 
+## Descrição do projeto
 
 <p align="justify">
   O Loogbook Trainer emerge como um projeto dedicado a auxiliar aqueles que apreciam o treino, mas encontram desafios em reter informações sobre seus últimos exercícios, tais como o número de repetições realizadas e a carga utilizada. Este sistema visa proporcionar aos usuários a capacidade de manter uma consistência em sua jornada de evolução, permitindo-lhes alcançar resultados superiores no aprimoramento pessoal.
@@ -48,7 +42,7 @@ A funcionalidade de **Login** no Loogbook Trainer é a porta de entrada para uma
 
 ---
 
-###  **Funcionalidade 2 - Adicionar Lista de Exercícios**
+### **Funcionalidade 2 - Adicionar Lista de Exercícios**
 
 A funcionalidade de **Adicionar Lista de Exercícios** no Loogbook Trainer proporciona a você a capacidade de criar e personalizar sua própria lista de atividades físicas. Seja para organizar seu treino semanal ou criar um programa específico, esta funcionalidade oferece flexibilidade e controle sobre seu plano de exercícios.
 
@@ -61,7 +55,7 @@ A funcionalidade de **Adicionar Lista de Exercícios** no Loogbook Trainer propo
 
 ---
 
-###  **Funcionalidade 3 - Selecionar Exercícios da Lista Pré-selecionada**
+### **Funcionalidade 3 - Selecionar Exercícios da Lista Pré-selecionada**
 
 A funcionalidade de **Selecionar Exercícios da Lista Pré-selecionada** no Loogbook Trainer oferece uma abordagem eficiente para a escolha de atividades durante o seu treino. Com uma lista pré-selecionada diversificada, você pode personalizar facilmente suas sessões de exercícios de acordo com suas preferências e objetivos específicos.
 
@@ -74,7 +68,7 @@ A funcionalidade de **Selecionar Exercícios da Lista Pré-selecionada** no Loog
 
 ---
 
-###  **Funcionalidade 4 - Selecionar Carga da Lista Pré-selecionada**
+### **Funcionalidade 4 - Selecionar Carga da Lista Pré-selecionada**
 
 A funcionalidade de **Selecionar Carga da Lista Pré-selecionada** no Loogbook Trainer simplifica o processo de ajustar a resistência durante seus exercícios. Com uma lista pré-selecionada de cargas, você pode adaptar instantaneamente a intensidade do seu treino, garantindo uma experiência personalizada.
 
@@ -94,7 +88,9 @@ A funcionalidade de **Selecionar Repetição** no Loogbook Trainer proporciona u
 
 1. Ao registrar um novo exercício ou editar um existente, selecione o número desejado de repetições a partir da lista pré-definida.
 2. Adapte instantaneamente a intensidade do seu treino, garantindo uma abordagem personalizada para cada sessão.
+
 ---
+
 ### Funcionalidade 6 - Adicionar Nota Pessoal sobre o Exercício
 
 A funcionalidade de **Adicionar Nota Pessoal** no Loogbook Trainer permite que você enriqueça seus registros de treino com observações pessoais. Personalize cada entrada na sua lista de exercícios, compartilhando insights, sensações e detalhes específicos para uma análise mais completa.
@@ -103,7 +99,9 @@ A funcionalidade de **Adicionar Nota Pessoal** no Loogbook Trainer permite que v
 
 1. Durante o registro do exercício, adicione notas pessoais para descrever sensações, observações sobre a técnica ou qualquer informação relevante.
 2. Torne cada entrada única, fornecendo um contexto valioso para suas sessões de treino.
+
 ---
+
 ### Funcionalidade 7 - Salvar Exercício na Lista
 
 A funcionalidade de **Salvar Exercício na Lista** no Loogbook Trainer simplifica o processo de registrar e armazenar seus treinos. Após personalizar detalhes como tipo de exercício, carga e repetições, salve o exercício na sua lista para um acompanhamento contínuo.
@@ -112,7 +110,9 @@ A funcionalidade de **Salvar Exercício na Lista** no Loogbook Trainer simplific
 
 1. Após configurar os detalhes do exercício, clique em "Salvar na Lista" para registrar sua sessão.
 2. Mantenha um histórico organizado e acessível, facilitando análises futuras de desempenho.
+
 ---
+
 ### Funcionalidade 8 - Cancelar Registro Atual e Voltar para Lista
 
 A funcionalidade de **Cancelar Registro Atual e Voltar para Lista** oferece flexibilidade durante o processo de registro. Se decidir interromper o registro atual, retorne à lista de exercícios sem comprometer a integridade do histórico.
@@ -121,7 +121,9 @@ A funcionalidade de **Cancelar Registro Atual e Voltar para Lista** oferece flex
 
 1. Durante o registro de um exercício, clique em "Cancelar" para interromper o processo atual.
 2. Seja direcionado de volta à lista de exercícios sem salvar a entrada inacabada.
+
 ---
+
 ### Funcionalidade 9 - Editar Registro da Lista de Exercícios
 
 A funcionalidade de **Editar Registro** na Lista de Exercícios do Loogbook Trainer oferece a liberdade de ajustar detalhes após o registro inicial. Seja para corrigir informações ou atualizar seu progresso, essa funcionalidade facilita modificações.
@@ -143,6 +145,7 @@ A funcionalidade de **Deletar Registro** na Lista de Exercícios permite uma ges
 2. Confirme a exclusão para remover permanentemente o registro.
 
 ---
+
 ### Funcionalidade 11 - Cálculo de 1RM para Cada Exercício Adicionado na Lista
 
 A funcionalidade de **Cálculo de 1RM** no Loogbook Trainer oferece uma abordagem avançada para análise de desempenho. Automaticamente calculando a sua Repetição Máxima de 1RM para cada exercício adicionado à lista, você obtém insights precisos sobre sua força e progresso.
@@ -152,12 +155,11 @@ A funcionalidade de **Cálculo de 1RM** no Loogbook Trainer oferece uma abordage
 1. Após adicionar um exercício à lista, a plataforma realiza automaticamente o cálculo de 1RM.
 2. Acompanhe as variações de força e ajuste seu treino com base nos resultados fornecidos.
 
-
 ## Layout ou Deploy da Aplicação :dash:
 
 > Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
 
-... 
+...
 
 Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
 
@@ -167,17 +169,17 @@ Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
 
 ...
 
-Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação 
+Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação
 
 ## Como rodar a aplicação :arrow_forward:
 
-No terminal, clone o projeto: 
+No terminal, clone o projeto:
 
 ```
 git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
 ```
 
-... 
+...
 
 Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
 
@@ -186,11 +188,13 @@ Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio 
 Coloque um passo a passo para executar os testes
 
 ```
-$ npm test, rspec, etc 
+$ npm test, rspec, etc
 ```
 
 ## Casos de Uso
-<b>Funcionalidade 1 - Login .</b> 
+
+<b>Funcionalidade 1 - Login .</b>
+
 ```
 <b>Ator Principal:</b>
 Usuário registrado no Loogbook Trainer.
@@ -220,7 +224,6 @@ Se o usuário não tiver uma conta registrada, é redirecionado para o processo 
 <b>Notas Adicionais:</b>
 O Login no Loogbook Trainer é projetado para ser intuitivo, rápido e seguro, garantindo uma experiência de usuário sem complicações enquanto oferece acesso instantâneo às poderosas ferramentas de acompanhamento de treino.
 ```
-
 
 Funcionalidade 2 - Adicionar lista de exercicios.</b>
 
@@ -300,6 +303,7 @@ A funcionalidade de Selecionar Exercícios e Cargas da Lista Pré-selecionada no
 ```
 
 **Funcionalidade 4 - Selecionar Carga da Lista Pré-selecionada no Loogbook Trainer**
+
 ```
 **Ator Principal:**
 Usuário registrado no Loogbook Trainer.
@@ -337,6 +341,7 @@ A funcionalidade de Selecionar Carga da Lista Pré-selecionada no Loogbook Train
 ```
 
 **Funcionalidade 5 - Selecionar Repetição da Lista Pré-selecionada no Loogbook Trainer**
+
 ```
 
 **Ator Principal:**
@@ -375,6 +380,7 @@ A funcionalidade de Selecionar Repetição da Lista Pré-selecionada no Loogbook
 ```
 
 **Funcionalidade 6 - Adicionar Nota Pessoal sobre o Exercício no Loogbook Trainer**
+
 ```
 **Ator Principal:**
 Usuário registrado no Loogbook Trainer.
@@ -413,6 +419,7 @@ A funcionalidade de Adicionar Nota Pessoal sobre o Exercício no Loogbook Traine
 ```
 
 **Funcionalidade 7 Gerenciamento de Registros na Lista de Exercícios no Loogbook Trainer**
+
 ```
 **Ator Principal:**
 Usuário registrado no Loogbook Trainer.
@@ -450,6 +457,7 @@ A funcionalidade de Salvar Exercício na Lista no Loogbook Trainer simplifica o 
 ```
 
 **Funcionalidade 8 - Cancelar Registro Atual e Voltar para Lista no Loogbook Trainer**
+
 ```
 **Ator Principal:**
 Usuário registrado no Loogbook Trainer.
@@ -481,6 +489,7 @@ A funcionalidade de Cancelar Registro Atual e Voltar para Lista no Loogbook Trai
 ```
 
 **Funcionalidade - 9 Editar Registro da Lista de Exercícios no Loogbook Trainer**
+
 ```
 **Ator Principal:**
 Usuário registrado no Loogbook Trainer.
@@ -518,8 +527,8 @@ O exercício é modificado com sucesso na lista, refletindo as alterações real
 A funcionalidade de Editar Registro da Lista de Exercícios no Loogbook Trainer oferece ao usuário a capacidade de ajustar e corrigir informações, garantindo que o histórico de treino seja sempre preciso e adaptado às suas necessidades específicas. Isso contribui para uma análise mais detalhada do progresso físico ao longo do tempo.
 ```
 
-
 **Funcionalidade - 10 Deletar Registro da Lista de Exercícios no Loogbook Trainer**
+
 ```
 **Ator Principal:**
 Usuário registrado no Loogbook Trainer.
@@ -551,6 +560,7 @@ A funcionalidade de Deletar Registro da Lista de Exercícios no Loogbook Trainer
 ```
 
 **Funcionalidade - 11 Cálculo de 1RM para Exercício na Lista no Loogbook Trainer**
+
 ```
 **Ator Principal:**
 Usuário registrado no Loogbook Trainer.
@@ -581,25 +591,75 @@ O usuário recebe o resultado do cálculo de 1RM para o exercício selecionado, 
 A funcionalidade de Cálculo de 1RM para Exercício na Lista no Loogbook Trainer oferece ao usuário uma ferramenta útil para avaliar sua força e adaptar seus treinos de acordo. Isso contribui para um treinamento mais personalizado e alinhado com as metas individuais de condicionamento físico.
 ```
 
-Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
+Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante.
 
 Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
 
 ## JSON :floppy_disk:
 
-### Usuários: 
+### Usuários:
 
-|name |password|
-| ----|-------|
-|admin|admin  |
+| name  | password |
+| ----- | -------- |
+| admin | admin    |
 
-... 
+...
 
-Se quiser, coloque uma amostra do banco de dados 
+Se quiser, coloque uma amostra do banco de dados
 
 ## Iniciando/Configurando banco de dados
 
-Se for necessário configurar algo antes de iniciar o banco de dados insira os comandos a serem executados 
+# Documentação do Banco de Dados MongoDB
+
+## Diagrama do Esquema
+
+<img src="https://drive.google.com/uc?export=view&id=1qb08REcswHiWa3cOalQbXiM6TU3o5Hm4" width=100%>
+
+## Script de Criação do Banco de Dados
+
+```javascript
+// script_de_criacao_do_banco.js
+
+// Criação do Banco de Dados
+use(loogbook);
+
+// Criação de Coleções
+db.createCollection("users");
+db.createCollection("exercicios");
+```
+
+## Descrição das Coleções
+
+### Coleção `usuarios`
+
+- **Propósito:** Armazenar dados de usuários para login.
+- **Campos:**
+  - `nome` (string)
+  - `password` (string)
+  - `email` (string)
+
+### Coleção `exercicios`
+
+- **Propósito:** Armazenar exercícios executados.
+- **Campos:**
+  - `data` (string)
+  - `tipoExercicio` (string)
+  - `preco` (string)
+  - `repeticao` (string)
+  - `notas` (string)
+  - `usuarioId` (string)
+
+## Procedimentos de Backup e Recuperação
+
+```
+- **Backup:** Utilize o comando `mongodump`.
+- **Recuperação:** Utilize o comando `mongorestore`.
+
+```
+
+[Dowload logbook-db basic](https://drive.google.com/file/d/1t0IjSf95DZ8ae_eSyaAwKkka2TaLkw4n/view?usp=sharing)
+
+Caso voce opte por instalar uma cópia do banco de dados não se esqueça de alterar as informações referentes ao banco no arquivo index.js do modulo backend.
 
 ## Linguagens, dependencias e libs utilizadas :books:
 
@@ -608,31 +668,29 @@ Se for necessário configurar algo antes de iniciar o banco de dados insira os c
 - [Node](https://nodejs.org/en)
 - [Mongodb](https://www.mongodb.com/pt-br/)
 
-
-
 ## Resolvendo Problemas :exclamation:
 
-Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
+Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos.
 
 ## Tarefas em aberto
 
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
+Funcionalidades que ainda precisam ser implementadas na sua aplicação.
 
-:memo: Tarefa 1 
-
-:memo: Tarefa 2 
-
-:memo: Tarefa 3 
+:memo: Implementar Cálculo de 1RM para Cada Exercício Adicionado na Lista.
 
 ## Desenvolvedores/Contribuintes :octocat:
 
 Liste o time responsável pelo desenvolvimento do projeto
 
 | [<img src="https://avatars.githubusercontent.com/u/33368785?v=4" width=115><br><sub>Felipe Verissimo</sub>](https://github.com/felipeverissimo/)
-| :---: | 
+| :---: |
 
-## Licença 
+## Licença
 
 The [MIT License]() (MIT)
 
 Copyright :copyright: 2023 - LogBook Trainer
+
+```
+
+```
