@@ -3,6 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20EXPRESS&color=RED&style=for-the-badge&logo=EXPRESS"/>
 </p>
 
 > Status do Projeto: :warning: (em desenvolvimento, etc)
