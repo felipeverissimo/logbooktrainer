@@ -156,13 +156,14 @@ A funcionalidade de **Cálculo de 1RM** no Loogbook Trainer oferece uma abordage
 1. Após adicionar um exercício à lista, a plataforma realiza automaticamente o cálculo de 1RM.
 2. Acompanhe as variações de força e ajuste seu treino com base nos resultados fornecidos.
 
-## Layout ou Deploy da Aplicação :dash:
-
-> Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
+## Layout ou Demonstração da Aplicação :dash:
 
 Com um layout simplificado e focado na experiência web/mobile, apresento abaixo uma versão preliminar do design do projeto.
 
 <img src="https://drive.google.com/uc?export=view&id=1plmIIVvrBqcFjMqTwY-WLPJDldQkM9Le" width=100%>
+
+> É possivel conferir uma demonstração da Aplicação no ip há baixo :
+> http://18.229.104.108/
 
 ## Pré-requisitos
 
@@ -288,11 +289,6 @@ npm test
    - Arquivo: `LoginButton.test.js` .
    - Comando: `npm test LoginButton.test.js` .
 
-7. **Renderiza o App com o Provider e testa navegação**
-   - Descrição: Garante que o aplicativo seja renderizado corretamente com o provedor de contexto e testa a navegação.
-   - Arquivo: `App.test.js` .
-   - Comando: `npm test App.test.js` .
-
 ### Lista para testes backend
 
 1. **Deve criar um usuário com sucesso**
@@ -326,21 +322,21 @@ npm test
 
 ## Casos de Uso
 
-<b>Funcionalidade 1 - Login .</b>
+**Funcionalidade 1 - Login.**
 
 ```
-<b>Ator Principal:</b>
+**Ator Principal:**
 Usuário registrado no Loogbook Trainer.
 
-<b>Objetivo:</b>
+**Objetivo:**
 Permitir que o usuário acesse sua conta personalizada no Loogbook Trainer para gerenciar e acompanhar seu progresso de treino.
 
-<b>Pré-condições:</b>
+**Pré-condições:**
 
 O usuário deve possuir uma conta registrada no Loogbook Trainer.
 Dispositivo com conexão à internet.
 
-<b>Fluxo Básico:</b>
+**Fluxo Básico:**
 
 O usuário acessa a página inicial do Loogbook Trainer.
 Clica na opção "Login" no menu de navegação.
@@ -349,30 +345,30 @@ Confirma as informações e aciona o botão de login.
 O sistema verifica as credenciais e, se corretas, concede acesso à conta do usuário.
 Fluxo Alternativo:
 
-<b>Exceções:</b>
+**Exceções:**
 
 Se as credenciais fornecidas estiverem incorretas, o sistema notifica o usuário e oferece a opção de tentar novamente ou recuperar a senha.
 Se o usuário não tiver uma conta registrada, é redirecionado para o processo de criação de conta.
 
-<b>Notas Adicionais:</b>
+**Notas Adicionais:**
 O Login no Loogbook Trainer é projetado para ser intuitivo, rápido e seguro, garantindo uma experiência de usuário sem complicações enquanto oferece acesso instantâneo às poderosas ferramentas de acompanhamento de treino.
 ```
 
-Funcionalidade 2 - Adicionar lista de exercicios.</b>
+**Funcionalidade 2 - Adicionar lista de exercicios.**
 
 ```
-<b>Ator Principal:</b>
+**Ator Principal:**
 Usuário registrado no Loogbook Trainer.
 
-<b>Objetivo:</b>
+**Objetivo:**
 Permitir que o usuário registre, acompanhe e analise seu desempenho em diferentes exercícios, incluindo tipo de exercício, carga utilizada, número de repetições (reps) e notas adicionais.
 
-<b>Pré-condições:</b>
+**Pré-condições:**
 
 O usuário deve ter uma conta registrada e estar autenticado no Loogbook Trainer.
 O usuário deve ter acessado a seção de "Lista de Exercícios" na plataforma.
 
-<b>Fluxo Básico:</b>
+**Fluxo Básico:**
 
 O usuário acessa a seção "Lista de Exercícios" no painel principal.
 Seleciona a opção para adicionar um novo exercício.
@@ -381,9 +377,9 @@ Insere a carga utilizada para o exercício.
 Registra o número de repetições (reps) realizadas durante a sessão.
 Adiciona notas opcionais para fornecer informações adicionais sobre a sessão de treino (ex: sensações, dificuldades encontradas, observações sobre a técnica).
 
-<b>Fluxo Alternativo:</b>
+**Fluxo Alternativo:**
 
-<b>Edição de Exercício:<b>
+**Edição de Exercício:**
 O usuário acessa a lista de exercícios já registrados.
 Seleciona o exercício desejado.
 Modifica as informações, como carga, reps ou notas.
@@ -391,7 +387,7 @@ Salva as alterações.
 Pós-condições:
 O exercício é registrado na lista do usuário, permitindo o acompanhamento contínuo do progresso ao longo do tempo. As estatísticas e análises detalhadas podem ser acessadas na plataforma.
 
-<b>Exceções:</b>
+**Exceções:**
 
 Se o usuário tentar adicionar um exercício sem preencher informações obrigatórias, o sistema notifica sobre os campos em falta.
 Caso ocorra um erro durante o registro do exercício, o sistema fornece uma mensagem de erro e orienta o usuário sobre como proceder.
@@ -551,7 +547,7 @@ O usuário tem uma nota pessoal associada ao exercício em sua lista, proporcion
 A funcionalidade de Adicionar Nota Pessoal sobre o Exercício no Loogbook Trainer oferece ao usuário uma maneira flexível e intuitiva de personalizar seus registros, tornando-os mais significativos e informativos.
 ```
 
-**Funcionalidade 7 Gerenciamento de Registros na Lista de Exercícios no Loogbook Trainer**
+**Funcionalidade 7 - Gerenciamento de Registros na Lista de Exercícios no Loogbook Trainer**
 
 ```
 **Ator Principal:**
@@ -621,7 +617,7 @@ A funcionalidade de Cancelar Registro Atual e Voltar para Lista no Loogbook Trai
 
 ```
 
-**Funcionalidade - 9 Editar Registro da Lista de Exercícios no Loogbook Trainer**
+**Funcionalidade 9 - Editar Registro da Lista de Exercícios no Loogbook Trainer**
 
 ```
 **Ator Principal:**
@@ -660,7 +656,7 @@ O exercício é modificado com sucesso na lista, refletindo as alterações real
 A funcionalidade de Editar Registro da Lista de Exercícios no Loogbook Trainer oferece ao usuário a capacidade de ajustar e corrigir informações, garantindo que o histórico de treino seja sempre preciso e adaptado às suas necessidades específicas. Isso contribui para uma análise mais detalhada do progresso físico ao longo do tempo.
 ```
 
-**Funcionalidade - 10 Deletar Registro da Lista de Exercícios no Loogbook Trainer**
+**Funcionalidade 10 - Deletar Registro da Lista de Exercícios no Loogbook Trainer**
 
 ```
 **Ator Principal:**
@@ -692,7 +688,7 @@ A funcionalidade de Deletar Registro da Lista de Exercícios no Loogbook Trainer
 
 ```
 
-**Funcionalidade - 11 Cálculo de 1RM para Exercício na Lista no Loogbook Trainer**
+**Funcionalidade 11 - Cálculo de 1RM para Exercício na Lista no Loogbook Trainer**
 
 ```
 **Ator Principal:**
