@@ -37,3 +37,10 @@
     padding-bottom: 20px;
     border-bottom: 2px solid #CBA46A;
 }
+
+.passwordToggleBtn{
+    background-color: transparent;
+    color: #CBA46A ;
+    outline: none;
+    border: none;
+}

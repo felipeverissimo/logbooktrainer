@@ -107,7 +107,7 @@ const ExercisesForm = () => {
     try {
       if (params.id !== "new") {
         const response = await fetch(
-          "http://localhost:5000/exercice/" + `${params.id}`
+          "http://18.229.104.108/api/exercice/" + `${params.id}`
         );
         if (!response.ok) {
           throw new Error("Não foi possível buscar os exercícios");

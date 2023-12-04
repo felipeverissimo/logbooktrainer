@@ -1,39 +1,46 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const exerciceController = require("./controllers/ExercicesController"); // Substitua 'caminho-para-o-seu-exercice-controller' pelo caminho correto para o seu controlador
 const userController = require("./controllers/UserController"); // Substitua 'caminho-para-o-seu-exercice-controller' pelo caminho correto para o seu controlador
 
 const app = express();
 const port = 5000;
 
+const corsOptions = {
+  origin: 'http://localhost:3000',
+};
+
 // Middleware para analisar o corpo da requisição como JSON
 app.use(express.json());
+app.use(cors());
 
 // Conexão com o MongoDB (substitua 'mongodb://localhost/nome-do-banco' pelo URL do seu banco de dados)
 
+
 // Rota para criar um exercício
-app.post("/save", exerciceController.createExercice);
+app.post("/api/save", exerciceController.createExercice);
 
 // Rota para atualizar um exercício
-app.post("/update/:id", exerciceController.updateExercice);
+app.post("/api/update/:id", exerciceController.updateExercice);
 
 // Rota para buscar um exercício por ID
-app.get("/exercice/:id", exerciceController.getExerciceById);
+app.get("/api/exercice/:id", exerciceController.getExerciceById);
 
 // Rota para buscar todos os exercícios
-app.get("/exercices/:usuarioId", exerciceController.getAllExercices);
+app.get("/api/exercices/:usuarioId", exerciceController.getAllExercices);
 
 // Rota para excluir um exercício
-app.post("/delete", exerciceController.deleteExercice);
+app.post("/api/delete", exerciceController.deleteExercice);
 
-app.post("/user/save", userController.createUser);
+app.post("/api/user/save", userController.createUser);
 
-app.post("/user/login", userController.loginUser);
+app.post("/api/user/login", userController.loginUser);
 
 let client = null;
 const connectToMongoDB = async () => {
   try {
-    client = await mongoose.connect("mongodb://mongodb:27017/loogbook", {
+    client = await mongoose.connect("mongodb://localhost:27017/loogbook", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

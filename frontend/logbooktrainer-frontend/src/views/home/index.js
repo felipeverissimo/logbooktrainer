@@ -24,7 +24,8 @@ const Home = () => {
 
     const handlerForExercicios = async () => {
         try {
-            const response = await fetch('http://localhost:5000/exercices/'+`${usuarioId}`);
+           
+            const response = await fetch('http://18.229.104.108/api/exercices/'+`${usuarioId}`);
             if (!response.ok) {
                 throw new Error('Não foi possível buscar os exercícios');
             }

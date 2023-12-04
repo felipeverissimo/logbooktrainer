@@ -13,7 +13,7 @@ const Lista = ({ showHeader = true }) => {
     const headers = showHeader ? Object.keys(dataList[0] || {}) : [];
 
     const deletarExercicio = async function (exercicioData) {
-        const url = 'http://localhost:5000/delete'; // Substitua pela URL completa se necessário
+        const url = 'http://18.229.104.108/api/delete'; // Substitua pela URL completa se necessário
 
         const requestOptions = {
             method: 'POST',

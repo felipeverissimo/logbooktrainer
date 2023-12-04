@@ -146,3 +146,8 @@ button.errorMessage {
     color: white;
     background-color: red;
 }
+
+button:hover {
+     filter: brightness(0.8);
+    border: solid 1px white;
+  }

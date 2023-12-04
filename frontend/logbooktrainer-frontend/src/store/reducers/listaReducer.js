@@ -9,7 +9,7 @@ const initialState = {
 
 
 async function deletarExercicio (exercicioData) {
-    const url = 'http://localhost:5000/delete'; // Substitua pela URL completa se necessário
+    const url = 'http://18.229.104.108/api/delete'; // Substitua pela URL completa se necessário
 
     const requestOptions = {
         method: 'POST',
@@ -38,11 +38,11 @@ async function salvarExercicio (exercicioData) {
     console.log(exercicioData)
     let url=''
     if(exercicioData._id ==="null") {
-        url = 'http://localhost:5000/save';
+        url = 'http://18.229.104.108/api/save';
         delete exercicioData._id
     }
     else{
-        url = 'http://localhost:5000/update/'+`${exercicioData._id}` 
+        url = 'http://18.229.104.108/api/update/'+`${exercicioData._id}` 
     }
 
 
