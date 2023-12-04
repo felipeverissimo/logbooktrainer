@@ -799,7 +799,21 @@ Caso voce opte por instalar uma cópia do banco de dados não se esqueça de alt
 
 ## Resolvendo Problemas :exclamation:
 
-Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos.
+**1. Implementação de Tema Branco:**
+
+**Título da Issue:** Adicionar Suporte para Tema Branco - Não implementada
+
+**Descrição:**
+Atualmente, a aplicação utiliza um tema padrão, mas é necessário oferecer aos usuários a opção de escolher um tema claro. A implementação do tema branco proporcionará uma experiência visual mais flexível e atenderá às preferências de usuários que preferem interfaces mais claras.
+
+---
+
+**2. Estilização do Botão "Show" na Tela de Login com Hover:** - Implementada
+
+**Título da Issue:** Estilizar Botão "Show" na Tela de Login com Efeito Hover
+
+**Descrição:**
+O botão "Show" na tela de login atualmente carece de estilização e interatividade visual. Esta issue propõe a adição de estilos visuais aprimorados para o botão, incluindo cores atraentes e um efeito hover que proporcionará uma experiência mais envolvente aos usuários. A estilização deve ser consistente com o design global da aplicação e seguir as melhores práticas de usabilidade. Além disso, é fundamental garantir que o efeito hover seja implementado de forma responsiva, proporcionando feedback visual claro quando o cursor está sobre o botão, melhorando a usabilidade e a estética da tela de login.
 
 ## Tarefas em aberto
 
